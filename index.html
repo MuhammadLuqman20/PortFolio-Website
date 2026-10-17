@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Luqman | Full-Stack Developer &amp; AI/ML Practitioner</title>
+  <meta name="description"
+    content="Personal portfolio of Muhammad Luqman, Computer Science student at FAST-NUCES, full-stack web developer, and AI/ML enthusiast showcasing real projects, repositories, and technical skills.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Muhammad Luqman Home">
+        <span class="logo-code">&lt;</span>Luqman<span class="logo-accent">.dev</span><span
+          class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#highlights" class="nav-link">Highlights</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-gold-solid nav-cta">Get in Touch</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#highlights" class="mobile-nav-link">Highlights</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn btn-gold-solid btn-block">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-gold-top" aria-hidden="true"></div>
+      <div class="hero-glow-gold-bottom" aria-hidden="true"></div>
+
+      <div class="section-container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">FAST-NUCES CS Student &bull; Full-Stack &amp; AI/ML</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-gold">Muhammad Luqman</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Full-Stack Web Developer &bull; Backend Engineer &bull; AI/ML Practitioner
+          </p>
+
+          <p class="hero-intro">
+            Computer Science student at FAST-NUCES building scalable full-stack web applications, reliable backend
+            systems, and practical machine learning solutions.
+          </p>
+
+          <!-- Focus Tags -->
+          <div class="hero-tags" aria-label="Core Technical Focus">
+            <span class="tag">MERN Stack</span>
+            <span class="tag">RESTful Architecture</span>
+            <span class="tag">Deep Learning (PyTorch)</span>
+            <span class="tag">Symbolic AI &amp; Logic</span>
+            <span class="tag">Python &amp; C++</span>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-gold-solid" id="hero-view-projects">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              View My Projects
+            </a>
+            <a href="https://github.com/MuhammadLuqman20" target="_blank" rel="noopener noreferrer"
+              class="btn btn-gold-outline" id="hero-visit-github">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              Visit GitHub
+            </a>
+            <a href="#contact" class="btn btn-ghost" id="hero-contact-me">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Round Photograph with Luxury Golden Ring -->
+        <div class="hero-image-wrapper">
+          <div class="portrait-card round-portrait-card">
+            <div class="portrait-orbit-ring" aria-hidden="true"></div>
+            <div class="portrait-gold-ring" aria-hidden="true"></div>
+            <div class="portrait-frame round-frame">
+              <img src="profile.jpg" alt="Muhammad Luqman - Computer Science Student and Developer"
+                class="portrait-img round-img" id="hero-profile-image" loading="eager">
+            </div>
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-left">
+              <span class="badge-dot dot-gold"></span>
+              <span class="badge-text">Full-Stack Web</span>
+            </div>
+            <div class="floating-badge badge-bottom-right">
+              <span class="badge-dot dot-gold"></span>
+              <span class="badge-text">AI / Deep Learning</span>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-dot dot-gold"></span>
+              <span class="badge-text">FAST-NUCES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infinite Scrolling Marquee Section -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="marquee-item"><span class="marquee-bullet"></span> FULL-STACK WEB DEVELOPMENT</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> DEEP LEARNING (PYTORCH)</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> FAST-NUCES CS</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> MERN STACK ARCHITECTURE</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> SYMBOLIC AI &amp; RESOLUTION REFUTATION</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> DEIMOS TECH INTERNSHIP</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> RESTFUL APIS &amp; MVC</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> A* HEURISTIC PATHFINDING</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> MONGODB ATLAS</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> PYTHON &amp; C++</span>
+        </div>
+        <div class="marquee-content">
+          <span class="marquee-item"><span class="marquee-bullet"></span> FULL-STACK WEB DEVELOPMENT</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> DEEP LEARNING (PYTORCH)</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> FAST-NUCES CS</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> MERN STACK ARCHITECTURE</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> SYMBOLIC AI &amp; RESOLUTION REFUTATION</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> DEIMOS TECH INTERNSHIP</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> RESTFUL APIS &amp; MVC</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> A* HEURISTIC PATHFINDING</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> MONGODB ATLAS</span>
+          <span class="marquee-item"><span class="marquee-bullet"></span> PYTHON &amp; C++</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Background &amp; Philosophy</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">Turning computational theory into real-world software and intelligent systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text narrative -->
+          <div class="about-card story-card">
+            <h3 class="card-title">Computer Science &amp; Engineering Focus</h3>
+            <p>
+              I am a Computer Science student at <strong>FAST-NUCES (Chiniot-Faisalabad context)</strong> focused on
+              software craftsmanship. In web engineering, I build robust full-stack applications with the <strong>MERN
+                stack</strong>, structuring scalable RESTful APIs, MVC backend patterns, and relational data models with
+              MongoDB &amp; Mongoose.
+            </p>
+            <p>
+              In <strong>Artificial Intelligence &amp; Machine Learning</strong>, I focus on practical
+              implementations—including PyTorch deep learning models (Inception CNNs), knowledge-based symbolic logic
+              agents, and heuristic graph search algorithms.
+            </p>
+            <div class="about-values">
+              <div class="value-item">
+                <span class="value-icon">&check;</span>
+                <span class="value-text">Practical, project-driven engineering approach</span>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">&check;</span>
+                <span class="value-text">Modular MVC architecture &amp; RESTful APIs</span>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">&check;</span>
+                <span class="value-text">Applied deep learning &amp; intelligent algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlights Quick Specs -->
+          <div class="about-side">
+            <div class="stat-card">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">GitHub Repositories</div>
+              <p class="stat-sub">Spanning full-stack web, deep learning, logic agents, and algorithmic tools.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">FAST-NUCES</div>
+              <div class="stat-label">BS Computer Science</div>
+              <p class="stat-sub">Strong grounding in Data Structures, Algorithms, Databases, and AI.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">Deimos Tech</div>
+              <div class="stat-label">Web Dev Internship</div>
+              <p class="stat-sub">Backend validation, Express/MongoDB MVC services, and API development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Six verified, practical projects highlighting full-stack engineering, deep learning,
+            and intelligent agents.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Filter Projects by Category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All
+            Projects (6)</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" id="filter-web">Web Development
+            (3)</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false" id="filter-ai">AI / Machine
+            Learning (3)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1: E-Commerce Engine (Smart Shop X / Task 4) -->
+          <article class="project-card" data-category="web" id="project-ecommerce-engine">
+            <div class="project-card-header">
+              <span class="project-category-badge badge-gold">Web Development</span>
+              <span class="project-repo-type">Full-Stack Application</span>
+            </div>
+
+            <h3 class="project-title">E-Commerce Engine with Checkout Sandbox</h3>
+            <p class="project-problem">
+              <strong>Purpose:</strong> Production-grade e-commerce application with JWT authentication, persistent
+              MongoDB cart sync, Stripe sandbox checkout, and Admin dashboard.
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-heading">Key Features:</h4>
+              <ul class="features-list">
+                <li>JWT authentication, bcrypt password encryption, and protected API routes.</li>
+                <li>Persistent cart sync with atomic inventory stock validation and Stripe checkout.</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">React 18</span>
+              <span class="tech-pill">Vite</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express.js</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">Stripe API</span>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/MuhammadLuqman20/Task-4-Ecommerce-Engine" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-gold-solid">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Product Inventory Management System -->
+          <article class="project-card" data-category="web" id="project-inventory-system">
+            <div class="project-card-header">
+              <span class="project-category-badge badge-gold">Web Development</span>
+              <span class="project-repo-type">Backend &amp; Database System</span>
+            </div>
+
+            <h3 class="project-title">Product Inventory Management System</h3>
+            <p class="project-problem">
+              <strong>Purpose:</strong> Full-stack inventory management system preventing negative stock balances with
+              transactional updates and category/supplier tracking.
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-heading">Key Features:</h4>
+              <ul class="features-list">
+                <li>Clean MVC architecture with REST API endpoints for products, categories, and suppliers.</li>
+                <li>Transactional Stock IN/OUT operations ensuring consistent inventory balance updates.</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express.js</span>
+              <span class="tech-pill">MongoDB Atlas</span>
+              <span class="tech-pill">Mongoose</span>
+              <span class="tech-pill">REST APIs</span>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/MuhammadLuqman20/Product-Inventory-Management-System" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-gold-solid">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Wumpus World Knowledge-Based Agent -->
+          <article class="project-card" data-category="ai" id="project-wumpus-world">
+            <div class="project-card-header">
+              <span class="project-category-badge badge-gold">AI / Machine Learning</span>
+              <span class="project-repo-type">Symbolic AI &amp; Logic</span>
+            </div>
+
+            <h3 class="project-title">Wumpus World Knowledge-Based Agent</h3>
+            <p class="project-problem">
+              <strong>Purpose:</strong> Autonomous AI agent solving the partially observable Wumpus World environment
+              using formal propositional logic and resolution refutation.
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-heading">Key Features:</h4>
+              <ul class="features-list">
+                <li>Propositional Logic Knowledge Base in CNF with Resolution Refutation inference.</li>
+                <li>Dynamic grid sizing (3&times;3 to 8&times;8), safe/danger cell tracking, and live deployment.</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Vite</span>
+              <span class="tech-pill">Propositional Logic</span>
+              <span class="tech-pill">Resolution Refutation</span>
+            </div>
+
+            <div class="project-card-footer project-card-multi-cta">
+              <a href="https://github.com/MuhammadLuqman20/Wumpus-World" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-gold-solid">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repository
+              </a>
+              <a href="https://wumpus-world-sigma.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-gold-outline btn-live-demo">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: CIFAR-10 Inception CNN Image Classification -->
+          <article class="project-card" data-category="ai" id="project-cifar10-cnn">
+            <div class="project-card-header">
+              <span class="project-category-badge badge-gold">AI / Machine Learning</span>
+              <span class="project-repo-type">Deep Learning &amp; Computer Vision</span>
+            </div>
+
+            <h3 class="project-title">CIFAR-10 Inception-Style CNN Classification</h3>
+            <p class="project-problem">
+              <strong>Purpose:</strong> Deep learning image classification under tight sample scarcity (500 images)
+              using a lightweight custom Inception CNN (~13.8k parameters).
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-heading">Key Features:</h4>
+              <ul class="features-list">
+                <li>Custom Inception module with parallel 1&times;1, 3&times;3, 5&times;5 convolutions and pooling
+                  branches.</li>
+                <li>Cross-seed ablation experiments, dropout regularization, and Test-Time Augmentation (TTA).</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">CNN Architectures</span>
+              <span class="tech-pill">Jupyter</span>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/MuhammadLuqman20/DLP-Assignment-2-CIFAR10" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-gold-solid">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Dynamic Pathfinding Agent -->
+          <article class="project-card" data-category="ai" id="project-pathfinding-agent">
+            <div class="project-card-header">
+              <span class="project-category-badge badge-gold">AI / Machine Learning</span>
+              <span class="project-repo-type">Search &amp; Graph Algorithms</span>
+            </div>
+
+            <h3 class="project-title">Dynamic AI Pathfinding Agent</h3>
+            <p class="project-problem">
+              <strong>Purpose:</strong> Informed heuristic search simulation with dynamic obstacles and instant
+              real-time path re-planning.
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-heading">Key Features:</h4>
+              <ul class="features-list">
+                <li>Implementation of A* and Greedy Best-First Search (GBFS) using Manhattan and Euclidean heuristics.
+                </li>
+                <li>Dynamic mode with real-time obstacle emergence and automated path re-computation in Pygame.</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Pygame</span>
+              <span class="tech-pill">A* Algorithm</span>
+              <span class="tech-pill">GBFS</span>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/MuhammadLuqman20/AI-Pathifinding-Agent-using-Informed-Searches"
+                target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold-solid">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: Task Dashboard Platform -->
+          <article class="project-card" data-category="web" id="project-task-dashboard">
+            <div class="project-card-header">
+              <span class="project-category-badge badge-gold">Web Development</span>
+              <span class="project-repo-type">Full-Stack Application</span>
+            </div>
+
+            <h3 class="project-title">Interactive Dynamic Task Dashboard Platform</h3>
+            <p class="project-problem">
+              <strong>Purpose:</strong> Single-page CRUD task coordinator with reactive status filtering and REST API
+              communication.
+            </p>
+
+            <div class="project-features">
+              <h4 class="features-heading">Key Features:</h4>
+              <ul class="features-list">
+                <li>End-to-end CRUD workflow with responsive creation and editing modal dialogs.</li>
+                <li>Asynchronous REST API integration with real-time status tabs (To Do, In Progress, Completed).</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">React 19</span>
+              <span class="tech-pill">Vite</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express.js</span>
+              <span class="tech-pill">MongoDB</span>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/MuhammadLuqman20/Task-3-Tasks-Dashboard" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-gold-solid">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-desc">Practical technologies and tools applied throughout my software and AI projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Group 1: Frontend -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Frontend</h3>
+            </div>
+            <ul class="skill-badges-list">
+              <li class="skill-item">HTML5</li>
+              <li class="skill-item">CSS3</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">React</li>
+            </ul>
+          </div>
+
+          <!-- Group 2: Backend -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Backend</h3>
+            </div>
+            <ul class="skill-badges-list">
+              <li class="skill-item">Node.js</li>
+              <li class="skill-item">Express.js</li>
+              <li class="skill-item">REST APIs</li>
+              <li class="skill-item">MVC Architecture</li>
+            </ul>
+          </div>
+
+          <!-- Group 3: Databases -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Databases</h3>
+            </div>
+            <ul class="skill-badges-list">
+              <li class="skill-item">MongoDB</li>
+              <li class="skill-item">Mongoose ODM</li>
+              <li class="skill-item">MySQL</li>
+              <li class="skill-item">SQL</li>
+            </ul>
+          </div>
+
+          <!-- Group 4: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Languages</h3>
+            </div>
+            <ul class="skill-badges-list">
+              <li class="skill-item">Python</li>
+              <li class="skill-item">C++</li>
+              <li class="skill-item">C</li>
+              <li class="skill-item">JavaScript (ES6+)</li>
+            </ul>
+          </div>
+
+          <!-- Group 5: AI/ML & Data -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">AI/ML &amp; Data</h3>
+            </div>
+            <ul class="skill-badges-list">
+              <li class="skill-item">Python-based Data Analysis</li>
+              <li class="skill-item">Machine Learning Fundamentals</li>
+              <li class="skill-item">PyTorch / CNN Models</li>
+              <li class="skill-item">Model Training &amp; Evaluation</li>
+              <li class="skill-item">Google Colab</li>
+              <li class="skill-item">Jupyter Notebook</li>
+            </ul>
+          </div>
+
+          <!-- Group 6: Development Tools -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Development Tools</h3>
+            </div>
+            <ul class="skill-badges-list">
+              <li class="skill-item">Git</li>
+              <li class="skill-item">GitHub</li>
+              <li class="skill-item">VS Code</li>
+              <li class="skill-item">Figma</li>
+              <li class="skill-item">Postman</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section (Deimos Tech) -->
+    <section class="section experience-section" id="experience">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Work Experience</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <p class="section-desc">Practical engineering experience in industry web development environments.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Web Development Intern</h3>
+                  <div class="experience-company">Deimos Tech &bull; Full-Stack Web Development Track</div>
+                </div>
+                <span class="experience-badge">Internship</span>
+              </div>
+
+              <div class="experience-body">
+                <p>
+                  Contributed to full-stack web engineering workflows with a heavy focus on backend architecture, API
+                  contract design, and data validation.
+                </p>
+                <ul class="experience-highlights">
+                  <li>
+                    <strong>Product Inventory Backend:</strong> Engineered a structured inventory management backend
+                    utilizing Express.js, Mongoose, and MongoDB Atlas.
+                  </li>
+                  <li>
+                    <strong>MVC Organization:</strong> Implemented Model-View-Controller architectural separation,
+                    organizing business logic into clean controllers, routers, and data models.
+                  </li>
+                  <li>
+                    <strong>Data Validation &amp; API Integrity:</strong> Enforced backend request validation routines
+                    to sanitize client payloads and guard against invalid category or supplier references.
+                  </li>
+                  <li>
+                    <strong>Stock Operations:</strong> Implemented transactional stock IN and OUT logic to update
+                    inventory balances accurately and prevent negative stock occurrences.
+                  </li>
+                </ul>
+                <div class="tech-stack-pills">
+                  <span class="tech-pill">Express.js</span>
+                  <span class="tech-pill">Node.js</span>
+                  <span class="tech-pill">MongoDB Atlas</span>
+                  <span class="tech-pill">Mongoose</span>
+                  <span class="tech-pill">MVC Architecture</span>
+                  <span class="tech-pill">REST APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Highlights Section -->
+    <section class="section highlights-section" id="highlights">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Milestones</span>
+          <h2 class="section-title">Projects &amp; Development Highlights</h2>
+          <p class="section-desc">Verifiable milestones achieved across academic research and full-stack software
+            development.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <!-- Highlight 1 -->
+          <div class="highlight-card">
+            <div class="highlight-number">01</div>
+            <h3 class="highlight-title">Full-Stack Application Delivery</h3>
+            <p class="highlight-text">
+              Successfully developed end-to-end full-stack web applications (such as the E-Commerce Engine and Task
+              Management Dashboard), integrating modern React interfaces with robust Node/Express backends and
+              persistent MongoDB databases.
+            </p>
+          </div>
+
+          <!-- Highlight 2 -->
+          <div class="highlight-card">
+            <div class="highlight-number">02</div>
+            <h3 class="highlight-title">Backend Architecture &amp; API Validation</h3>
+            <p class="highlight-text">
+              Engineered production-grade REST APIs featuring JWT token-based authentication, bcrypt credential
+              encryption, Stripe sandbox payment verification, and atomic database state synchronization.
+            </p>
+          </div>
+
+          <!-- Highlight 3 -->
+          <div class="highlight-card">
+            <div class="highlight-number">03</div>
+            <h3 class="highlight-title">Deimos Tech Industry Internship</h3>
+            <p class="highlight-text">
+              Completed full-stack internship assignments delivering core backend services for product inventory
+              operations, enforcing MVC architectural principles and strict relational validation in MongoDB Atlas.
+            </p>
+          </div>
+
+          <!-- Highlight 4 -->
+          <div class="highlight-card">
+            <div class="highlight-number">04</div>
+            <h3 class="highlight-title">Symbolic AI &amp; Theorem Proving</h3>
+            <p class="highlight-text">
+              Engineered and deployed an autonomous knowledge-based AI agent for the partially observable Wumpus World
+              environment, implementing Propositional Logic in Conjunctive Normal Form (CNF) and Resolution Refutation.
+            </p>
+          </div>
+
+          <!-- Highlight 5 -->
+          <div class="highlight-card">
+            <div class="highlight-number">05</div>
+            <h3 class="highlight-title">Deep Learning &amp; Inception CNN Research</h3>
+            <p class="highlight-text">
+              Designed a lightweight Inception-style Convolutional Neural Network (&sim;13,874 parameters) in PyTorch
+              for CIFAR-10 classification under constrained sample sizes (500 images), conducting cross-seed ablation
+              studies and TTA.
+            </p>
+          </div>
+
+          <!-- Highlight 6 -->
+          <div class="highlight-card">
+            <div class="highlight-number">06</div>
+            <h3 class="highlight-title">Dynamic Pathfinding Heuristics</h3>
+            <p class="highlight-text">
+              Implemented informed graph search algorithms (A* &amp; Greedy Best-First Search) with Manhattan and
+              Euclidean heuristics, incorporating real-time obstacle generation and dynamic path re-planning in Pygame.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">Formal undergraduate studies establishing a solid foundation in computer science.</p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-logo-badge">
+            <span class="edu-initials">FAST</span>
+          </div>
+          <div class="education-details">
+            <div class="education-header">
+              <h3 class="education-degree">Bachelor of Science in Computer Science (BS CS)</h3>
+              <span class="education-status">In Progress</span>
+            </div>
+            <div class="education-school">FAST-NUCES (National University of Computer and Emerging Sciences)</div>
+            <div class="education-context">Chiniot / CFD Context</div>
+            <p class="education-desc">
+              Rigorous curriculum emphasizing core software engineering principles, algorithmic problem-solving,
+              operating systems, database management systems, artificial intelligence, and deep learning. Active project
+              work connecting theory directly to functional implementations.
+            </p>
+            <div class="education-courses">
+              <span class="course-tag">Data Structures &amp; Algorithms</span>
+              <span class="course-tag">Object-Oriented Programming</span>
+              <span class="course-tag">Database Systems</span>
+              <span class="course-tag">Operating Systems</span>
+              <span class="course-tag">Artificial Intelligence</span>
+              <span class="course-tag">Deep Learning</span>
+              <span class="course-tag">Computer Networks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-desc">
+            I am always open to discussing new software development opportunities, AI/ML projects, and technical
+            collaborations. Feel free to reach out directly through email or connect on LinkedIn and GitHub.
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Email</h3>
+            <p class="contact-card-info">luqman44waseem@gmail.com</p>
+            <div class="contact-card-actions">
+              <a href="mailto:luqman44waseem@gmail.com" class="btn btn-sm btn-gold-solid">
+                Send Email
+              </a>
+              <button class="btn btn-sm btn-gold-outline" id="copy-email-btn" data-email="luqman44waseem@gmail.com">
+                <span id="copy-text">Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </div>
+            <h3 class="contact-card-title">GitHub</h3>
+            <p class="contact-card-info">github.com/MuhammadLuqman20</p>
+            <div class="contact-card-actions">
+              <a href="https://github.com/MuhammadLuqman20" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-gold-solid">
+                Explore Profile
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </div>
+            <h3 class="contact-card-title">LinkedIn</h3>
+            <p class="contact-card-info">linkedin.com/in/muhammad-luqman</p>
+            <div class="contact-card-actions">
+              <a href="https://www.linkedin.com/in/muhammad-luqman-34ab81353/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-gold-solid">
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-banner">
+          <div class="contact-banner-content">
+            <h3 class="banner-title">Looking for an enthusiastic, practical developer?</h3>
+            <p class="banner-desc">Let's discuss how my full-stack engineering and machine learning skills can add value
+              to your team or project.</p>
+          </div>
+          <a href="mailto:luqman44waseem@gmail.com" class="btn btn-gold-solid banner-btn">
+            Send an Email
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-code">&lt;</span>Luqman<span class="logo-accent">.dev</span><span
+            class="logo-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Muhammad Luqman &bull; Computer Science Student &bull; FAST-NUCES</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/MuhammadLuqman20" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-luqman-34ab81353/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:luqman44waseem@gmail.com" aria-label="Email">Email</a>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Scroll to top of page">
+          Back to Top &uarr;
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="section-container">
+        <p>&copy; <span id="current-year">2026</span> Muhammad Luqman. Built with refined semantic HTML, CSS3, &amp;
+          JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-message" id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
