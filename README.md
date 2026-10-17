@@ -45,6 +45,9 @@ portfolio/
 ├── style.css
 ├── script.js
 └── README.md
+└── profile.jpg
+└── animations.js
+└── server.js
 ```
 
 ## 🚀 Run Locally
