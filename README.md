@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This website showcases my skills, projects, ex
 
 ## 🌐 Live Demo
 
-**Portfolio:** [View My Portfolio](https://your-project-name.vercel.app)
+**Portfolio:** [View My Portfolio](mluqmandev.vercel.app)
 
 *Replace the URL above with your actual Vercel deployment link.*
 
